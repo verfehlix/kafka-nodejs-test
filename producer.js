@@ -2,7 +2,7 @@ const kafka = require('kafka-node');
 const faker = require('faker');
 
 const client = new kafka.KafkaClient({
-  kafkaHost: 'localhost:29092'
+  kafkaHost: 'localhost:29092',
 });
 
 const producer = new kafka.Producer(client);
@@ -31,7 +31,6 @@ function startSending() {
   });
 }
 
-// test
 producer.on('ready', () => {
   console.log('Starting the sending...');
 
@@ -39,7 +38,7 @@ producer.on('ready', () => {
 });
 
 producer.on('error', (error) => {
-  console.log("Error during setup of producer:");
+  console.log('Error during setup of producer:');
 
   console.log(error);
-})
+});

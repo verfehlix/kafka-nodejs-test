@@ -5,7 +5,7 @@ const client = new kafka.KafkaClient({
 });
 
 const consumer = new kafka.Consumer(client, [{ topic: 'people', parition: 0 }], {
-  autoCommit: false
+  autoCommit: false,
 });
 
 consumer.on('message', (msg) => {
@@ -13,7 +13,7 @@ consumer.on('message', (msg) => {
 });
 
 consumer.on('error', (error) => {
-  console.log("Error during setup of consumer:");
+  console.log('Error during setup of consumer:');
 
   console.log(error);
-})
+});
