@@ -31,6 +31,7 @@ function startSending() {
   });
 }
 
+// test
 producer.on('ready', () => {
   console.log('Starting the sending...');
 
