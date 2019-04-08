@@ -97,6 +97,16 @@ async@^2.6.2:
   dependencies:
     lodash "^4.17.11"
 
+avro-schema-registry@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/avro-schema-registry/-/avro-schema-registry-1.3.0.tgz#862ef3db36bfdc70e0cdb0b112cf8f716860585b"
+  integrity sha512-MOFzIboop1xOcZQpefHNXhR5kwwMr2xARMP7Ld0milWSHddiByXypEVNoKY2yI9eiUrnfFqe8owLXV833Ft+2Q==
+
+avsc@^5.4.7:
+  version "5.4.7"
+  resolved "https://registry.yarnpkg.com/avsc/-/avsc-5.4.7.tgz#7036f16334ba04207343d3a53896d52c7da41deb"
+  integrity sha512-R/KpS+fhUqGXtxST/+Hty/1G0ujkUcWjV+of5PG+ncODaNelR3Xr0ZLcxxNj23JMRv+HPE7V4C3T9oF/1JMTOg==
+
 balanced-match@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
@@ -1559,7 +1569,7 @@ util-deprecate@~1.0.1:
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
 
-uuid@^3.0.0, uuid@^3.3.2:
+uuid@^3.0.0:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
   integrity sha512-yXJmeNaw3DnnKAOKJE51sL/ZaYfWJRl1pK9dr19YFCu0ObS231AB1/LbqTKRAQ5kw8A90rA6fr4riOUpTZvQZA==
