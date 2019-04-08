@@ -4,11 +4,6 @@
   "fields": [
     { "name": "firstName", "type": "string" },
     { "name": "lastName", "type": "string" },
-    { "name": "birthDate", "type": "string" },
-    {
-      "name": "age",
-      "type": "int",
-      "default": 0
-    }
+    { "name": "birthDate", "type": "string" }
   ]
 }
