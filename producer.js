@@ -13,17 +13,6 @@ const registry = avroSchemaRregistry('http://localhost:29081');
 const schemaFileData = fs.readFileSync('peopleSchema.json', 'utf8');
 const schema = JSON.parse(schemaFileData);
 
-// registry
-//   .encodeMessage('topic', schema, fakePerson)
-//   .then((msg) => {
-//     console.log(msg); // <Buffer 00 00 00 00 01 18 74 65 73 74 20 6d 65 73 73 61 67 65>
-
-//     return registry.decode(msg);
-//   })
-//   .then((msg) => {
-//     console.log(msg); // test message
-//   });
-
 async function encodePersonBySchema(person) {
   console.log('encoding person by schema...');
 

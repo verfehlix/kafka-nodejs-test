@@ -1,10 +1,7 @@
-const fs = require('fs');
 const kafka = require('kafka-node');
 const avroSchemaRregistry = require('avro-schema-registry');
 
 const registry = avroSchemaRregistry('http://localhost:29081');
-const schemaFileData = fs.readFileSync('peopleSchema.json', 'utf8');
-const schema = JSON.parse(schemaFileData);
 
 const client = new kafka.KafkaClient({
   kafkaHost: 'localhost:29092',
